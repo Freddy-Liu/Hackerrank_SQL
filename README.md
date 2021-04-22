@@ -1,4 +1,4 @@
-## Hackerranl_SQL
+## Hackerrank_SQL
 
 * [Basic Select](https://www.hackerrank.com/domains/sql?filters%5Bstatus%5D%5B%5D=unsolved&filters%5Bsubdomains%5D%5B%5D=select&badge_type=sql)
 * [Advanced Select](https://www.hackerrank.com/domains/sql?filters%5Bstatus%5D%5B%5D=unsolved&filters%5Bsubdomains%5D%5B%5D=advanced-select&badge_type=sql)

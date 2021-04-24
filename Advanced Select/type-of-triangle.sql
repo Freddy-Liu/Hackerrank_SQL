@@ -1,15 +1,12 @@
--- Type of Triangle
 -- https://www.hackerrank.com/challenges/what-type-of-triangle/problem
 
-SELECT
-  CASE
-    WHEN A = B AND B = C then "Equilateral"
-    WHEN A + B <= C then "Not A Triangle"
-    WHEN A + C <= B then "Not A Triangle"
-    WHEN B + C <= A then "Not A Triangle"
-    WHEN A = B AND A <> C then "Isosceles"
-    WHEN A = C AND A <> B then "Isosceles"
-    WHEN B = C AND A <> B then "Isosceles"
-    ELSE "Scalene"
-  END
-FROM Triangles
+SELECT CASE
+        WHEN A + B > C AND C + B > A AND A + C > B THEN
+            CASE
+                WHEN A = B AND B = C THEN 'Equilateral'
+                WHEN A = B OR A = C OR B = C THEN 'Isosceles'
+                ELSE 'Scalene'
+            END
+        ELSE 'Not A Triangle'
+    END
+FROM TRIANGLES;
